@@ -18,8 +18,4 @@ public class SubtractionZone : TriggerZone
         }        
     }
 
-    private void DestroyBall(Ball ball)
-    {
-        Destroy(ball.gameObject);
-    }
 }

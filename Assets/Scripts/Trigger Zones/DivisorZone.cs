@@ -21,8 +21,4 @@ public class DivisorZone : TriggerZone
         }
     }
 
-    private void DestroyBall(Ball ball)
-    {
-        Destroy(ball.gameObject);
-    }
 }

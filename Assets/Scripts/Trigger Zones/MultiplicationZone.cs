@@ -24,10 +24,5 @@ public class MultiplicationZone : TriggerZone
         }
     }
 
-    private static void AddBall(Ball ball)
-    {
-        //var newball = Instantiate(ball,,, ball.transform.parent);
-        var newball = Instantiate(ball);
-        newball.SetCheckingZones(ball.CheckingZones);
-    }
+   
 }

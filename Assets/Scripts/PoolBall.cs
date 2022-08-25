@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class PoolBall : MonoBehaviour
 {
+    public static PoolBall instance = null;
+
     [SerializeField] private Ball _prefab;
 
     private Queue<Ball> _poolBals;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        _poolBals = new Queue<Ball>();
+    }
 
     public Ball GiveBall()
     {
